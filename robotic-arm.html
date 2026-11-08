@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A closer look at Meiyan Zhu's undergraduate research project: a robotic vial transporter.">
+  <meta name="theme-color" content="#f5f0e9">
+  <title>Robotic Vial Transporter — Meiyan Zhu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .case-top{padding:70px 0 45px}.back-link{font:10px var(--mono);color:var(--muted);display:inline-block;margin-bottom:45px}.back-link:hover{color:var(--orange)}
+    .case-title{display:grid;grid-template-columns:1.2fr .8fr;gap:8%;align-items:end}.case-title h1{font-size:clamp(48px,7vw,88px);margin:0}.case-title-copy{font-size:13px;line-height:1.9;color:var(--muted);max-width:420px;padding-bottom:8px}
+    .case-meta{display:flex;gap:30px;flex-wrap:wrap;margin-top:35px;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font:9px var(--mono);letter-spacing:.08em;color:var(--muted)}
+    .case-visual{position:relative;margin:55px auto 95px;max-width:1120px;padding:0 9%}.case-photo{height:500px;background:#e5dfd5;box-shadow:14px 14px 0 var(--paper-deep)}
+    .case-photo .photo-fallback{font-size:11px}.case-photo .fallback-cross{font-size:48px}
+    .sticky-note{position:absolute;z-index:3;width:205px;padding:19px 18px 17px;background:#f4e5e9;color:#57464c;box-shadow:2px 7px 16px #2825221c;transform:rotate(-4deg);font:italic 14px/1.55 var(--serif)}
+    .sticky-note:before{content:"";position:absolute;top:-8px;left:42%;width:58px;height:17px;background:#ffffff80;transform:rotate(2deg)}
+    .sticky-note small{display:block;font:9px var(--mono);letter-spacing:.1em;color:var(--orange);margin-bottom:9px;font-style:normal}
+    .sticky-one{top:35px;left:2%}.sticky-two{right:1%;bottom:25px;transform:rotate(3deg);background:#f1e8d9}
+    .case-caption{display:flex;justify-content:space-between;margin-top:22px;font:9px var(--mono);letter-spacing:.08em;color:var(--muted)}
+    .case-section{padding:0 0 85px;display:grid;grid-template-columns:.65fr 1.35fr;gap:9%}.case-section-label{font:9px var(--mono);letter-spacing:.12em;color:var(--orange);padding-top:8px}.case-section-content h2{font-size:clamp(32px,4vw,48px);margin-bottom:22px}.case-section-content p{font-size:13px;line-height:2;color:#68665f;max-width:730px}.case-section-content h3{font:600 23px var(--serif);margin:30px 0 10px}.case-list{display:grid;grid-template-columns:1fr 1fr;gap:14px 30px;margin-top:25px}.case-list div{border-top:1px solid var(--line);padding-top:12px}.case-list b{display:block;font:10px var(--mono);color:var(--orange);margin-bottom:6px}.case-list span{font-size:12px;color:var(--muted);line-height:1.7}
+    .case-note-row{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin:30px 0 15px}.case-note-row .sticky-note{position:relative;top:auto;left:auto;right:auto;bottom:auto;width:auto;min-height:140px}.case-note-row .sticky-note:nth-child(2){transform:rotate(2deg);background:#f1e8d9}
+    .case-end{background:var(--dark);color:var(--paper);padding:70px 0}.case-end h2{font-size:clamp(36px,5vw,58px);margin-bottom:18px}.case-end p{color:#c8c4ba;font-size:13px;line-height:1.9;max-width:680px}.case-end a{display:inline-block;margin-top:15px;border-bottom:1px solid #aaa;padding-bottom:7px;font-size:11px}
+    @media(max-width:700px){.case-title{grid-template-columns:1fr;gap:20px}.case-title-copy{max-width:560px}.case-visual{padding:0 4%;margin:35px auto 75px}.case-photo{height:340px}.sticky-note{width:160px;padding:14px;font-size:12px}.sticky-one{left:-1%;top:15px}.sticky-two{right:-1%;bottom:10px}.case-section{grid-template-columns:1fr;gap:18px;padding-bottom:65px}.case-note-row{gap:18px}.case-meta{gap:15px}}
+    @media(max-width:480px){.case-top{padding-top:45px}.back-link{margin-bottom:30px}.case-photo{height:270px}.sticky-note{width:142px;font-size:11px;padding:12px}.sticky-one{top:-22px;left:-2%}.sticky-two{bottom:-24px;right:-2%}.case-caption{font-size:8px;gap:15px}.case-note-row{grid-template-columns:1fr;gap:20px}.case-note-row .sticky-note{min-height:0}.case-list{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="topline"><span>MEIYAN ZHU</span><span>COMPUTER ENGINEERING · UIUC</span><span class="availability"><i></i> PROJECT NOTES</span></div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Meiyan Zhu home">MZ<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html#work">Selected work</a>
+      <a href="index.html#approach">My approach</a>
+      <a href="index.html#community">Community</a>
+      <a class="nav-contact" href="mailto:YOUR_EMAIL_HERE">Say hello <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-top section-wrap">
+      <a class="back-link" href="index.html#work">← BACK TO SELECTED WORK</a>
+      <p class="eyebrow"><span class="eyebrow-line"></span> UNDERGRADUATE RESEARCH · 2026</p>
+      <div class="case-title">
+        <h1>Robotic vial<br><em>transporter.</em></h1>
+        <p class="case-title-copy">A research project with UIUC's Autonomous Materials Systems Group. I worked on the electronics and Arduino control system for a robotic arm designed to move vials between workspaces.</p>
+      </div>
+      <div class="case-meta"><span>ROLE · UNDERGRADUATE RESEARCHER</span><span>MICROCONTROLLER · ARDUINO MEGA</span><span>LANGUAGE · C++</span><span>FOCUS · MOTION CONTROL + INTEGRATION</span></div>
+    </section>
+
+    <section class="case-visual">
+      <div class="case-photo photo-placeholder">
+        <img src="assets/robotic-arm/hero.jpg" alt="Robotic vial transporter prototype" onerror="this.style.display='none'">
+        <div class="photo-fallback"><span class="fallback-cross">＋</span><span>ADD A CLEAR PROJECT PHOTO HERE<br><small>assets/robotic-arm/hero.jpg</small></span></div>
+        <span class="photo-index">FIG. 01 / ROBOTIC VIAL TRANSPORTER</span>
+      </div>
+      <aside class="sticky-note sticky-one"><small>FIELD NOTE · CALIBRATION</small>The commanded steps and the actual movement didn't always line up. This took a lot of testing to get closer.</aside>
+      <aside class="sticky-note sticky-two"><small>A SMALL WIN</small>Seeing the arm complete the pickup, drop-off, and return sequence was one of my favorite moments.</aside>
+      <div class="case-caption"><span>PROTOTYPE · AUTONOMOUS MATERIALS SYSTEMS GROUP</span><span>UIUC · 2026</span></div>
+    </section>
+
+    <section class="case-section section-wrap">
+      <div class="case-section-label">01 / THE PROJECT</div>
+      <div class="case-section-content">
+        <h2>What I was working on.</h2>
+        <p>The broader research effort focused on a high-throughput polymer formulation platform. The robotic arm was intended to help move vials out of the workspace so they would not interfere with later experiments.</p>
+        <p>My part of the project centered on getting the arm's electronics and control system working. I worked with an Arduino Mega, stepper motors and drivers, limit switches, joystick and potentiometer inputs, and a servo-operated gripper.</p>
+        <div class="case-list">
+          <div><b>01 · CONTROLLER</b><span>Arduino Mega running the control logic.</span></div>
+          <div><b>02 · MOTION</b><span>NEMA-17 stepper motors with TB6600 drivers.</span></div>
+          <div><b>03 · INPUTS</b><span>Joysticks, switches, and potentiometers for manual control.</span></div>
+          <div><b>04 · SAFETY</b><span>Limit switches used to stop motion in a restricted direction.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section section-wrap">
+      <div class="case-section-label">02 / MY CONTRIBUTIONS</div>
+      <div class="case-section-content">
+        <h2>Making the pieces work together.</h2>
+        <p>I worked on wiring and integrating the electronics, then wrote and adapted Arduino control code to operate the motors and gripper. The system included manual controls as well as a basic preset sequence for moving between pickup, drop-off, and home positions.</p>
+        <p>I also worked on inverse-kinematics calculations to translate target positions into motor movement. This involved converting the calculated angles and distances into stepper-motor steps.</p>
+        <div class="case-note-row">
+          <aside class="sticky-note"><small>WHAT I LEARNED</small>Getting a formula into code is one thing. Making it match the real dimensions and movement of a physical arm is another.</aside>
+          <aside class="sticky-note"><small>DETAIL I HAD TO THINK THROUGH</small>Limit switches needed to stop movement toward the limit without preventing the arm from moving away from it.</aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section section-wrap">
+      <div class="case-section-label">03 / TESTING + ITERATION</div>
+      <div class="case-section-content">
+        <h2>Calibration was the hard part.</h2>
+        <p>One of the biggest challenges was calibrating the motors. The movement commanded in software did not always correspond exactly to the physical distance or angle traveled. I tested the arm, compared commanded and measured movement, and adjusted the steps-per-degree and steps-per-millimeter values.</p>
+        <p>This process helped me understand how mechanical tolerances, motor behavior, and software assumptions affect one another. It also made testing and measurement a much bigger part of the work than I had expected.</p>
+      </div>
+    </section>
+
+    <section class="case-section section-wrap">
+      <div class="case-section-label">04 / REFLECTION</div>
+      <div class="case-section-content">
+        <h2>What I'd take forward.</h2>
+        <p>I'm proud that I helped bring the electronics and control code together into a prototype that could be operated manually and run a basic preset transfer sequence. I also came away with a better appreciation for how much iteration goes into making a physical system behave reliably.</p>
+        <p>If I continued developing the project, I'd want to improve the mechanical robustness, expand the safety checks, and explore more complete integration with the surrounding platform. Those are areas I'd approach with a better understanding of the system's limitations after working through the first prototype.</p>
+      </div>
+    </section>
+
+    <section class="case-end">
+      <div class="section-wrap">
+        <p class="eyebrow light-eyebrow">NEXT UP</p>
+        <h2>More projects,<br><em>more things to learn.</em></h2>
+        <p>This is one part of what I've been exploring in computer engineering. I'm continuing to build, test, and learn through research, coursework, and personal projects.</p>
+        <a href="index.html#work">Back to selected work ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="index.html">MZ<span>.</span></a><span>DESIGNED & BUILT BY MEIYAN ZHU.</span><a href="#top">BACK TO TOP ↑</a></footer>
+</body>
+</html>
